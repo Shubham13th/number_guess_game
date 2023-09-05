@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif, Arial, Helvetica;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    box-shadow: 0 0 20px #222020;
+    width: 90%;
+    /* Adjusted width for responsiveness */
+    max-width: 500px;
+    /* Set a maximum width */
+    background-color: #001;
+    text-align: center;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: #FC0 1px 0 10px;
+    margin: 20px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.second {
+    margin: 10px;
+}
+
+#guess {
+    font-size: 25px;
+}
+
+.guessField {
+    width: 80%;
+    /* Make the input field width 100% for responsiveness */
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: #333;
+}
+
+.guessField:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+.guessSubmit {
+    width: 80%;
+    height: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+.guessSubmit:hover {
+    background-color: #fff;
+    box-shadow: 0 0 5px #fff;
+}
+
+.resultParas {
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+
+.resultParas p {
+    line-height: 1.5;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+        max-width: 400px;
+    }
+}
